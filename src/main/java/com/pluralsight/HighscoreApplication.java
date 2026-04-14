@@ -66,6 +66,9 @@ public class HighscoreApplication {
         if (homeScore > visitorScore) {
             System.out.println("Winner ^u^: " + homeTeam);
         }
+        else if (visitorScore > homeScore) {
+            System.out.println("Winner ^w^: " + visitorTeam);
+        }
 
 
 
