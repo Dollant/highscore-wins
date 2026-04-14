@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.InputMismatchException;
+
 import java.util.Scanner;
 
 public class HighscoreApplication {
@@ -55,6 +57,12 @@ public class HighscoreApplication {
             System.out.println("Scores must be whole numbers! ^^;\nExample: 21:9");
             continue;
         }
+
+        if (homeScore < 0 || visitorScore < 0) {
+            System.out.println("Scores can't be negative! -.-");
+            continue;
+        }
+
 
 
 
