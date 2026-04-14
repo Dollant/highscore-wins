@@ -65,14 +65,15 @@ public class HighscoreApplication {
 
         if (homeScore > visitorScore) {
             System.out.println("Winner ^u^: " + homeTeam);
-        }
-        else if (visitorScore > homeScore) {
+        } else if (visitorScore > homeScore) {
             System.out.println("Winner ^w^: " + visitorTeam);
+        } else {
+            System.out.println("It's a tie! :O\nBoth teams scored: " + homeScore + ".");
         }
 
-
-
-
+        break;
     }
+
+        keyboard.close();
     }
 }
