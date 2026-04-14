@@ -45,7 +45,16 @@ public class HighscoreApplication {
             continue;
         }
 
+        int homeScore;
+        int visitorScore;
 
+        try {
+            homeScore    = Integer.parseInt(scores[0].trim());
+            visitorScore = Integer.parseInt(scores[1].trim());
+        } catch (NumberFormatException e) {
+            System.out.println("Scores must be whole numbers! ^^;\nExample: 21:9");
+            continue;
+        }
 
 
 
