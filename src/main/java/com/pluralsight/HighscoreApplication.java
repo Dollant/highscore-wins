@@ -11,19 +11,30 @@ public class HighscoreApplication {
         String input =  keyboard.nextLine().trim();
 
         if (!input.contains("|")) {
-            System.out.println("Invalid format! T^T\n Please use: Home:Visitor|score1:score2");
+            System.out.println("Invalid format! T^T\nPlease use: Home:Visitor|score1:score2");
             continue;
         }
         String[] parts = input.split("\\|");
 
         if (parts.length != 2) {
-            System.out.println("Invalid format! T^T\n Please use: Home:Visitor|score1:score2");
+            System.out.println("Invalid format! T^T\nPlease use: Home:Visitor|score1:score2");
             continue;
         }
 
+        String teamPart  = parts[0].trim();
+        String scorePart = parts[1].trim();
+
+        if (!teamPart.contains(":") || !scorePart.contains(":")) {
+            System.out.println("Invalid format! T^T\nPlease use: Home:Visitor|score1:score2");
+            continue;
+        }
+
+        String[] teams  = teamPart.split(":");
+        String[] scores = scorePart.split(":");
 
 
 
-}
+
+    }
     }
 }
