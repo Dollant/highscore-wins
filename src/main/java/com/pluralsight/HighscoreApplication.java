@@ -37,6 +37,15 @@ public class HighscoreApplication {
             continue;
         }
 
+        String homeTeam    = teams[0].trim();
+        String visitorTeam = teams[1].trim();
+
+        if (homeTeam.isEmpty() || visitorTeam.isEmpty()) {
+            System.out.println("Team names can't be empty silly! >.<");
+            continue;
+        }
+
+
 
 
 
