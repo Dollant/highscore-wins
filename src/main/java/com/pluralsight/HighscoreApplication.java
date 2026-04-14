@@ -16,6 +16,13 @@ public class HighscoreApplication {
         }
         String[] parts = input.split("\\|");
 
+        if (parts.length != 2) {
+            System.out.println("Invalid format! T^T\n Please use: Home:Visitor|score1:score2");
+            continue;
+        }
+
+
+
 
 }
     }
