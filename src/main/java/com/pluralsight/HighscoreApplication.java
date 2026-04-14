@@ -32,6 +32,11 @@ public class HighscoreApplication {
         String[] teams  = teamPart.split(":");
         String[] scores = scorePart.split(":");
 
+        if (teams.length != 2 || scores.length != 2) {
+            System.out.println("Invalid format! T^T\nPlease use: Home:Visitor|score1:score2");
+            continue;
+        }
+
 
 
 
