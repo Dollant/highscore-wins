@@ -63,6 +63,10 @@ public class HighscoreApplication {
             continue;
         }
 
+        if (homeScore > visitorScore) {
+            System.out.println("Winner ^u^: " + homeTeam);
+        }
+
 
 
 
